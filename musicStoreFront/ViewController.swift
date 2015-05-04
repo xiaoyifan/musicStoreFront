@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import Foundation
 import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
         
         var appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         var context:NSManagedObjectContext = appDel.managedObjectContext!
@@ -27,9 +35,6 @@ class ViewController: UIViewController {
         
         println(errorFet)
         
-        for res in results {
-            println(res)
-        }
         
     }
 
@@ -37,6 +42,35 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+            return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return 20
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("appCell", forIndexPath: indexPath) as! UICollectionViewCell
+            var image : UIImage = UIImage(named:"sad")!
+            let bgImage = UIImageView(image: image)
+            bgImage.frame = CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height)
+            cell.addSubview(bgImage)
+    
+            return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+            let side = (self.view!.frame.width - 100)/2.0
+    
+            return CGSizeMake(side, side)
+        }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+            return UIEdgeInsetsMake(10, 40, 10, 40)
+        }
 
 
 }
