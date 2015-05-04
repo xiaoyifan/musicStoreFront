@@ -14,6 +14,10 @@
 		CC97B3AF1AF7992A001F75EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3AE1AF7992A001F75EA /* Images.xcassets */; };
 		CC97B3B21AF7992A001F75EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3B01AF7992A001F75EA /* LaunchScreen.xib */; };
 		CC97B3BE1AF7992A001F75EA /* musicStoreFrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */; };
+		CC97B3CC1AF79A78001F75EA /* musicStore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3C71AF79A78001F75EA /* musicStore.sqlite */; };
+		CC97B3CD1AF79A78001F75EA /* musicStore.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3C81AF79A78001F75EA /* musicStore.sqlite-shm */; };
+		CC97B3CE1AF79A78001F75EA /* musicStore.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3C91AF79A78001F75EA /* musicStore.sqlite-wal */; };
+		CC97B3CF1AF79A78001F75EA /* musicStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3CA1AF79A78001F75EA /* musicStore.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		CC97B3B71AF7992A001F75EA /* musicStoreFrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicStoreFrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC97B3BC1AF7992A001F75EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicStoreFrontTests.swift; sourceTree = "<group>"; };
+		CC97B3C71AF79A78001F75EA /* musicStore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicStore.sqlite; sourceTree = "<group>"; };
+		CC97B3C81AF79A78001F75EA /* musicStore.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-shm"; sourceTree = "<group>"; };
+		CC97B3C91AF79A78001F75EA /* musicStore.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-wal"; sourceTree = "<group>"; };
+		CC97B3CB1AF79A78001F75EA /* musicStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = musicStore.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 				CC97B3A41AF79929001F75EA /* AppDelegate.swift */,
 				CC97B3A91AF7992A001F75EA /* ViewController.swift */,
 				CC97B3AB1AF7992A001F75EA /* Main.storyboard */,
+				CC97B3C71AF79A78001F75EA /* musicStore.sqlite */,
+				CC97B3C81AF79A78001F75EA /* musicStore.sqlite-shm */,
+				CC97B3C91AF79A78001F75EA /* musicStore.sqlite-wal */,
+				CC97B3CA1AF79A78001F75EA /* musicStore.xcdatamodeld */,
 				CC97B3AE1AF7992A001F75EA /* Images.xcassets */,
 				CC97B3B01AF7992A001F75EA /* LaunchScreen.xib */,
 				CC97B3A61AF7992A001F75EA /* musicStoreFront.xcdatamodeld */,
@@ -195,9 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC97B3CE1AF79A78001F75EA /* musicStore.sqlite-wal in Resources */,
 				CC97B3AD1AF7992A001F75EA /* Main.storyboard in Resources */,
 				CC97B3B21AF7992A001F75EA /* LaunchScreen.xib in Resources */,
 				CC97B3AF1AF7992A001F75EA /* Images.xcassets in Resources */,
+				CC97B3CD1AF79A78001F75EA /* musicStore.sqlite-shm in Resources */,
+				CC97B3CC1AF79A78001F75EA /* musicStore.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC97B3AA1AF7992A001F75EA /* ViewController.swift in Sources */,
+				CC97B3CF1AF79A78001F75EA /* musicStore.xcdatamodeld in Sources */,
 				CC97B3A51AF79929001F75EA /* AppDelegate.swift in Sources */,
 				CC97B3A81AF7992A001F75EA /* musicStoreFront.xcdatamodeld in Sources */,
 			);
@@ -415,6 +431,7 @@
 				CC97B3C31AF7992A001F75EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC97B3C41AF7992A001F75EA /* Build configuration list for PBXNativeTarget "musicStoreFrontTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +440,7 @@
 				CC97B3C61AF7992A001F75EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -434,6 +452,16 @@
 			);
 			currentVersion = CC97B3A71AF7992A001F75EA /* musicStoreFront.xcdatamodel */;
 			path = musicStoreFront.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		CC97B3CA1AF79A78001F75EA /* musicStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC97B3CB1AF79A78001F75EA /* musicStore.xcdatamodel */,
+			);
+			currentVersion = CC97B3CB1AF79A78001F75EA /* musicStore.xcdatamodel */;
+			path = musicStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
