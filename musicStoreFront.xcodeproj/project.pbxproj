@@ -15,13 +15,16 @@
 		CC1528FA1AF8325D00CB7304 /* musicStore.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = CC1528F61AF8325D00CB7304 /* musicStore.sqlite-shm */; };
 		CC1528FB1AF8325D00CB7304 /* musicStore.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = CC1528F71AF8325D00CB7304 /* musicStore.sqlite-wal */; };
 		CC1528FC1AF8325D00CB7304 /* musicStore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CC1528F81AF8325D00CB7304 /* musicStore.sqlite */; };
+		CC1528FE1AF856B500CB7304 /* seachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1528FD1AF856B500CB7304 /* seachViewController.swift */; };
+		CC1529001AF8603B00CB7304 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1528FF1AF8603A00CB7304 /* Images.xcassets */; };
 		CC97B3A51AF79929001F75EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3A41AF79929001F75EA /* AppDelegate.swift */; };
 		CC97B3A81AF7992A001F75EA /* musicStoreFront.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3A61AF7992A001F75EA /* musicStoreFront.xcdatamodeld */; };
 		CC97B3AA1AF7992A001F75EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3A91AF7992A001F75EA /* ViewController.swift */; };
 		CC97B3AD1AF7992A001F75EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3AB1AF7992A001F75EA /* Main.storyboard */; };
-		CC97B3AF1AF7992A001F75EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3AE1AF7992A001F75EA /* Images.xcassets */; };
 		CC97B3B21AF7992A001F75EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3B01AF7992A001F75EA /* LaunchScreen.xib */; };
 		CC97B3BE1AF7992A001F75EA /* musicStoreFrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */; };
+		CCBC33141AF87E440066882A /* searchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33131AF87E440066882A /* searchCollectionViewController.swift */; };
+		CCBC33161AF87F6D0066882A /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33151AF87F6D0066882A /* searchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,17 +46,20 @@
 		CC1528F61AF8325D00CB7304 /* musicStore.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-shm"; sourceTree = "<group>"; };
 		CC1528F71AF8325D00CB7304 /* musicStore.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-wal"; sourceTree = "<group>"; };
 		CC1528F81AF8325D00CB7304 /* musicStore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicStore.sqlite; sourceTree = "<group>"; };
+		CC1528FD1AF856B500CB7304 /* seachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = seachViewController.swift; sourceTree = "<group>"; };
+		CC1528FF1AF8603A00CB7304 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC97B39F1AF79929001F75EA /* musicStoreFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicStoreFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC97B3A31AF79929001F75EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC97B3A41AF79929001F75EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC97B3A71AF7992A001F75EA /* musicStoreFront.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = musicStoreFront.xcdatamodel; sourceTree = "<group>"; };
 		CC97B3A91AF7992A001F75EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC97B3AC1AF7992A001F75EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC97B3AE1AF7992A001F75EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC97B3B11AF7992A001F75EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CC97B3B71AF7992A001F75EA /* musicStoreFrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicStoreFrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC97B3BC1AF7992A001F75EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicStoreFrontTests.swift; sourceTree = "<group>"; };
+		CCBC33131AF87E440066882A /* searchCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCollectionViewController.swift; sourceTree = "<group>"; };
+		CCBC33151AF87F6D0066882A /* searchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +106,16 @@
 				CC97B3A41AF79929001F75EA /* AppDelegate.swift */,
 				CC97B3A91AF7992A001F75EA /* ViewController.swift */,
 				CC1528CB1AF7BA9C00CB7304 /* appCell.swift */,
+				CC1528FD1AF856B500CB7304 /* seachViewController.swift */,
+				CCBC33131AF87E440066882A /* searchCollectionViewController.swift */,
+				CCBC33151AF87F6D0066882A /* searchCell.swift */,
 				CC97B3AB1AF7992A001F75EA /* Main.storyboard */,
 				CC1528F41AF8325D00CB7304 /* musicStore.xcdatamodeld */,
 				CC1528F61AF8325D00CB7304 /* musicStore.sqlite-shm */,
 				CC1528F71AF8325D00CB7304 /* musicStore.sqlite-wal */,
 				CC1528F81AF8325D00CB7304 /* musicStore.sqlite */,
+				CC1528FF1AF8603A00CB7304 /* Images.xcassets */,
 				CC1528CD1AF7E2ED00CB7304 /* sad.png */,
-				CC97B3AE1AF7992A001F75EA /* Images.xcassets */,
 				CC97B3B01AF7992A001F75EA /* LaunchScreen.xib */,
 				CC97B3A61AF7992A001F75EA /* musicStoreFront.xcdatamodeld */,
 				CC97B3A21AF79929001F75EA /* Supporting Files */,
@@ -224,9 +233,9 @@
 				CC1528FC1AF8325D00CB7304 /* musicStore.sqlite in Resources */,
 				CC97B3AD1AF7992A001F75EA /* Main.storyboard in Resources */,
 				CC97B3B21AF7992A001F75EA /* LaunchScreen.xib in Resources */,
-				CC97B3AF1AF7992A001F75EA /* Images.xcassets in Resources */,
 				CC1528FA1AF8325D00CB7304 /* musicStore.sqlite-shm in Resources */,
 				CC1528CE1AF7E2ED00CB7304 /* sad.png in Resources */,
+				CC1529001AF8603B00CB7304 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBC33141AF87E440066882A /* searchCollectionViewController.swift in Sources */,
+				CCBC33161AF87F6D0066882A /* searchCell.swift in Sources */,
 				CC97B3AA1AF7992A001F75EA /* ViewController.swift in Sources */,
 				CC1528D91AF7F27A00CB7304 /* appItem.swift in Sources */,
 				CC97B3A51AF79929001F75EA /* AppDelegate.swift in Sources */,
@@ -251,6 +262,7 @@
 				CC97B3A81AF7992A001F75EA /* musicStoreFront.xcdatamodeld in Sources */,
 				CC1528CC1AF7BA9C00CB7304 /* appCell.swift in Sources */,
 				CC1528F91AF8325D00CB7304 /* musicStore.xcdatamodeld in Sources */,
+				CC1528FE1AF856B500CB7304 /* seachViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +390,7 @@
 		CC97B3C21AF7992A001F75EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = musicStoreFront/Info.plist;
@@ -392,7 +404,7 @@
 		CC97B3C31AF7992A001F75EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = musicStoreFront/Info.plist;

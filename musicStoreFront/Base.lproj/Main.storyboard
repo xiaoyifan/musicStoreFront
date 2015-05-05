@@ -63,7 +63,6 @@
                                         <connections>
                                             <outlet property="cellIcon" destination="RJB-QC-uta" id="jgz-RZ-MPN"/>
                                             <outlet property="cellTitle" destination="dD9-Od-gtv" id="DhJ-R6-9q4"/>
-                                            <segue destination="IRn-Gm-DXQ" kind="show" id="s1v-ll-u1a"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -107,12 +106,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LbH-fL-0wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="-784"/>
+            <point key="canvasLocation" x="3591" y="-476"/>
         </scene>
         <!--search-->
         <scene sceneID="BaZ-bR-IQE">
             <objects>
-                <viewController id="2WR-2P-50F" sceneMemberID="viewController">
+                <viewController id="2WR-2P-50F" customClass="seachViewController" customModule="musicStoreFront" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jRu-Qu-vZq"/>
                         <viewControllerLayoutGuide type="bottom" id="p4w-8C-rgW"/>
@@ -142,6 +141,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un2-r1-AF4">
+                                <rect key="frame" x="270" y="280" width="60" height="40"/>
+                                <color key="backgroundColor" red="0.88204308710000001" green="0.88204308710000001" blue="0.88204308710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="YhF-if-ZG3"/>
+                                    <constraint firstAttribute="height" constant="40" id="lMt-r5-QTK"/>
+                                </constraints>
+                                <state key="normal" title="seach">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="2WR-2P-50F" eventType="touchUpInside" id="9cf-aU-35P"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRM-ib-fZu">
                                 <rect key="frame" x="24" y="144" width="40" height="40"/>
                                 <constraints>
@@ -159,6 +173,7 @@
                             <constraint firstItem="B7J-OB-sRp" firstAttribute="top" secondItem="r72-cK-LdI" secondAttribute="bottom" id="38i-NB-m8a"/>
                             <constraint firstItem="p4w-8C-rgW" firstAttribute="top" secondItem="QRM-ib-fZu" secondAttribute="bottom" id="43e-xn-zZ6"/>
                             <constraint firstItem="B7J-OB-sRp" firstAttribute="top" secondItem="QRM-ib-fZu" secondAttribute="bottom" id="4yv-Du-wGA"/>
+                            <constraint firstAttribute="centerY" secondItem="un2-r1-AF4" secondAttribute="centerY" id="60a-ex-2be"/>
                             <constraint firstItem="r72-cK-LdI" firstAttribute="leading" secondItem="QRM-ib-fZu" secondAttribute="trailing" id="6Ni-8i-0Y0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="r72-cK-LdI" secondAttribute="trailing" constant="20" id="6ep-fU-xpQ"/>
                             <constraint firstItem="QRM-ib-fZu" firstAttribute="leading" secondItem="BEe-LP-CiO" secondAttribute="leadingMargin" constant="20" id="9wq-w2-KOD"/>
@@ -169,6 +184,7 @@
                             <constraint firstAttribute="centerX" secondItem="B7J-OB-sRp" secondAttribute="centerX" id="ejn-oN-7SE"/>
                             <constraint firstAttribute="trailing" secondItem="B7J-OB-sRp" secondAttribute="trailing" constant="20" id="feH-ZD-3n8"/>
                             <constraint firstAttribute="centerX" secondItem="Qyk-U9-3sy" secondAttribute="centerX" id="jr5-KA-7Ep"/>
+                            <constraint firstAttribute="centerX" secondItem="un2-r1-AF4" secondAttribute="centerX" id="kEb-Eb-d9V"/>
                             <constraint firstItem="B7J-OB-sRp" firstAttribute="leading" secondItem="BEe-LP-CiO" secondAttribute="leading" constant="20" id="xQV-3x-dpV"/>
                             <constraint firstItem="QRM-ib-fZu" firstAttribute="leading" secondItem="BEe-LP-CiO" secondAttribute="leadingMargin" constant="8" id="xxC-ak-aAs"/>
                         </constraints>
@@ -182,10 +198,82 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="search" id="Rd1-5h-hXp"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="r72-cK-LdI" id="UT4-I4-dOV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kuE-0y-86k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="313" y="-78"/>
+        </scene>
+        <!--search reults-->
+        <scene sceneID="hac-5o-ujt">
+            <objects>
+                <collectionViewController storyboardIdentifier="searchCollectionVC" id="VrF-rm-YQf" customClass="searchCollectionViewController" customModule="musicStoreFront" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kw2-eO-2I8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kzu-e4-0Hh">
+                            <size key="itemSize" width="148" height="188"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="searchCell" id="1Q5-kc-Ejn" customClass="searchCell" customModule="musicStoreFront" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="148" height="188"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nc3-CE-3CA">
+                                            <rect key="frame" x="20" y="8" width="108" height="108"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Nc3-CE-3CA" secondAttribute="height" multiplier="1:1" id="W8p-KJ-MfW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYD-70-gY3">
+                                            <rect key="frame" x="20" y="165" width="108" height="18"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Nc3-CE-3CA" firstAttribute="top" secondItem="1Q5-kc-Ejn" secondAttribute="top" constant="8" id="6JQ-U3-lQg"/>
+                                    <constraint firstAttribute="bottom" secondItem="cYD-70-gY3" secondAttribute="bottom" constant="5" id="Owg-oa-BuX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nc3-CE-3CA" secondAttribute="trailing" constant="20" id="QXo-Jr-Dqv"/>
+                                    <constraint firstAttribute="trailing" secondItem="cYD-70-gY3" secondAttribute="trailing" constant="20" id="cZ7-SI-9PA"/>
+                                    <constraint firstItem="Nc3-CE-3CA" firstAttribute="leading" secondItem="1Q5-kc-Ejn" secondAttribute="leading" constant="20" id="g4h-iA-RbW"/>
+                                    <constraint firstItem="cYD-70-gY3" firstAttribute="leading" secondItem="1Q5-kc-Ejn" secondAttribute="leading" constant="20" id="sJT-zX-hwt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="cellIcon" destination="Nc3-CE-3CA" id="8pR-bE-3y2"/>
+                                    <outlet property="cellTitle" destination="cYD-70-gY3" id="Vil-RU-Qwr"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="VrF-rm-YQf" id="E1P-kC-2UZ"/>
+                            <outlet property="delegate" destination="VrF-rm-YQf" id="ZBD-b1-EGy"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="search reults" id="RL6-EO-TdP">
+                        <barButtonItem key="leftBarButtonItem" title="back" id="dnu-Kb-MSd">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backButtonPressed:" destination="VrF-rm-YQf" id="CCp-qi-1Fv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqK-y2-Sqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="-78"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="amL-yN-VoJ">
@@ -242,7 +330,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13M-1c-IoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="-764"/>
+            <point key="canvasLocation" x="2723" y="-456"/>
         </scene>
         <!--search-->
         <scene sceneID="fre-AL-TdH">
@@ -308,6 +396,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHN-Kg-5WK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-488" y="714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Iv-Iz-9WR">
+            <objects>
+                <navigationController storyboardIdentifier="searchNavigationVC" automaticallyAdjustsScrollViewInsets="NO" id="JfO-4j-un4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ecM-dT-2Gd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VrF-rm-YQf" kind="relationship" relationship="rootViewController" id="2DG-98-lkY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2l-Ho-Pj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="-78"/>
         </scene>
     </scenes>
     <resources>
