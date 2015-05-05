@@ -14,6 +14,13 @@ class detailViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var photoTableView: UITableView!
     
+    @IBOutlet weak var appIcon: UIImageView!
+    
+    @IBOutlet weak var appTitle: UILabel!
+    
+    @IBOutlet weak var appDescription: UITextView!
+    
+    
     var appObject:NSManagedObject?
     var photos = [PhotoRecord]()
     let pendingOperations = PendingOperations()
@@ -25,7 +32,25 @@ class detailViewController: UIViewController, UITableViewDataSource, UITableView
         self.photoTableView.dataSource = self;
         // Do any additional setup after loading the view.
         
+        let iconData = appObject!.valueForKey("appIcon") as! NSData
+        
+        if let image = UIImage(data: iconData) {
+            self.appIcon.image = image
+            self.appIcon.layer.cornerRadius = 15.0
+            self.appIcon.clipsToBounds = true
+        }
+        
+        self.appTitle.text = appObject!.valueForKey("trackCensoredName") as? String
+        self.appDescription.text = appObject!.valueForKey("objDescription") as! String
+        
         fetchPhotoDetails()
+        
+    }
+    
+    
+    
+    @IBAction func wishListTapped(sender: UIBarButtonItem) {
+        
         
     }
     
@@ -39,6 +64,7 @@ class detailViewController: UIViewController, UITableViewDataSource, UITableView
                 for value in screenshotUrls{
                     let name = value as! String
                     let url = NSURL(string:value as? String ?? "")
+                    println(url)
                     if url != nil {
                         let photoRecord = PhotoRecord(name:name, url:url!)
                         self.photos.append(photoRecord)
@@ -88,12 +114,15 @@ class detailViewController: UIViewController, UITableViewDataSource, UITableView
         case .Failed:
             indicator.stopAnimating()
 //            cell.textLabel?.text = "Failed to load"
-        case .New, .Downloaded:
+        case .New:
             indicator.startAnimating()
             if (!tableView.dragging && !tableView.decelerating) {
                 println("it's new")
                 self.startOperationsForPhotoRecord(photoDetails, indexPath: indexPath)
             }
+            
+        case .Downloaded:
+            indicator.stopAnimating()
         }
         
         return cell

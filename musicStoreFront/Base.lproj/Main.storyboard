@@ -98,8 +98,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wga-40-5Zz">
-                                <rect key="frame" x="0.0" y="288" width="600" height="312"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="400" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wga-40-5Zz">
+                                <rect key="frame" x="0.0" y="314" width="600" height="286"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="SmH-2a-nKH" customClass="screenshotsTableViewCell" customModule="musicStoreFront" customModuleProvider="target">
@@ -107,10 +107,31 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SmH-2a-nKH" id="3aq-xc-Xsu">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1FS-EH-iB4">
+                                                    <rect key="frame" x="68" y="13" width="464" height="373"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1FS-EH-iB4" secondAttribute="bottom" constant="5" id="7bR-jd-LQ7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1FS-EH-iB4" secondAttribute="trailing" constant="60" id="NLr-mU-xFe"/>
+                                                <constraint firstItem="1FS-EH-iB4" firstAttribute="leading" secondItem="3aq-xc-Xsu" secondAttribute="leadingMargin" constant="60" id="dgO-eb-6lD"/>
+                                                <constraint firstItem="1FS-EH-iB4" firstAttribute="top" secondItem="3aq-xc-Xsu" secondAttribute="topMargin" constant="5" id="jIv-ds-8Us"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myImageView" destination="1FS-EH-iB4" id="oFF-3i-8wz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eL-o7-PLl">
+                                <rect key="frame" x="0.0" y="180" width="600" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="exU-4p-bbm"/>
+                                </constraints>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GVj-PZ-aGH">
                                 <rect key="frame" x="20" y="84" width="80" height="80"/>
                                 <constraints>
@@ -142,17 +163,23 @@
                             <constraint firstItem="wga-40-5Zz" firstAttribute="top" secondItem="alr-pS-P7O" secondAttribute="topMargin" id="3wq-f3-NWa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wga-40-5Zz" secondAttribute="trailing" constant="-16" id="939-9E-6Ho"/>
                             <constraint firstItem="aoy-T2-A6o" firstAttribute="leading" secondItem="alr-pS-P7O" secondAttribute="leading" constant="20" id="L1a-qS-cvM"/>
+                            <constraint firstItem="wga-40-5Zz" firstAttribute="top" secondItem="GVj-PZ-aGH" secondAttribute="bottom" constant="150" id="Ned-hA-OIc"/>
                             <constraint firstItem="aoy-T2-A6o" firstAttribute="top" secondItem="GVj-PZ-aGH" secondAttribute="bottom" constant="16" id="QXL-1R-bZX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2eL-o7-PLl" secondAttribute="trailing" constant="-16" id="Suo-5S-SdR"/>
                             <constraint firstAttribute="trailing" secondItem="GIG-Aa-xCG" secondAttribute="trailing" constant="20" id="XCZ-ZJ-KFv"/>
+                            <constraint firstItem="2eL-o7-PLl" firstAttribute="top" secondItem="GVj-PZ-aGH" secondAttribute="bottom" constant="16" id="Xgr-sW-MG8"/>
                             <constraint firstItem="GVj-PZ-aGH" firstAttribute="leading" secondItem="alr-pS-P7O" secondAttribute="leading" constant="20" id="d61-W5-Ap0"/>
                             <constraint firstItem="J4O-kh-OVt" firstAttribute="top" secondItem="aoy-T2-A6o" secondAttribute="bottom" constant="10" id="fOn-JD-Pyh"/>
+                            <constraint firstItem="wga-40-5Zz" firstAttribute="top" secondItem="GVj-PZ-aGH" secondAttribute="bottom" constant="150" id="fzp-kq-ZnG"/>
                             <constraint firstItem="J4O-kh-OVt" firstAttribute="top" secondItem="wga-40-5Zz" secondAttribute="bottom" id="g5L-ra-OC3"/>
+                            <constraint firstItem="2eL-o7-PLl" firstAttribute="leading" secondItem="alr-pS-P7O" secondAttribute="leadingMargin" constant="-16" id="kO1-RB-r1N"/>
                             <constraint firstItem="GVj-PZ-aGH" firstAttribute="top" secondItem="WLM-zN-lzi" secondAttribute="bottom" constant="20" id="lMJ-qm-w1h"/>
                             <constraint firstItem="wga-40-5Zz" firstAttribute="leading" secondItem="alr-pS-P7O" secondAttribute="leadingMargin" constant="-16" id="tcf-B9-aGd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="3wq-f3-NWa"/>
+                                <exclude reference="Ned-hA-OIc"/>
                                 <exclude reference="fOn-JD-Pyh"/>
                             </mask>
                         </variation>
@@ -160,9 +187,15 @@
                     <navigationItem key="navigationItem" title="app detail" id="37m-Ex-Ucc">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="CbJ-f6-7IK">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="wishListTapped:" destination="bd4-Rd-aOw" id="42O-Ql-6HX"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="appDescription" destination="aoy-T2-A6o" id="hJS-63-npV"/>
+                        <outlet property="appIcon" destination="GVj-PZ-aGH" id="dhV-gX-o1d"/>
+                        <outlet property="appTitle" destination="GIG-Aa-xCG" id="ywK-zV-7F4"/>
                         <outlet property="photoTableView" destination="wga-40-5Zz" id="0WL-FW-cN2"/>
                     </connections>
                 </viewController>
