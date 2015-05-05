@@ -63,6 +63,7 @@
                                         <connections>
                                             <outlet property="cellIcon" destination="RJB-QC-uta" id="jgz-RZ-MPN"/>
                                             <outlet property="cellTitle" destination="dD9-Od-gtv" id="DhJ-R6-9q4"/>
+                                            <segue destination="IRn-Gm-DXQ" kind="show" id="jQL-eL-8Nv"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -88,7 +89,7 @@
         <!--app detail-->
         <scene sceneID="RZA-aY-Zcn">
             <objects>
-                <viewController id="bd4-Rd-aOw" sceneMemberID="viewController">
+                <viewController id="bd4-Rd-aOw" customClass="detailViewController" customModule="musicStoreFront" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WLM-zN-lzi"/>
                         <viewControllerLayoutGuide type="bottom" id="J4O-kh-OVt"/>
@@ -96,17 +97,78 @@
                     <view key="view" contentMode="scaleToFill" id="alr-pS-P7O">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wga-40-5Zz">
+                                <rect key="frame" x="0.0" y="288" width="600" height="312"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="SmH-2a-nKH" customClass="screenshotsTableViewCell" customModule="musicStoreFront" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SmH-2a-nKH" id="3aq-xc-Xsu">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GVj-PZ-aGH">
+                                <rect key="frame" x="20" y="84" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="E84-j7-Nrt"/>
+                                    <constraint firstAttribute="height" constant="80" id="s5V-Ap-jkS"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoy-T2-A6o">
+                                <rect key="frame" x="20" y="180" width="560" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Cxw-ct-PMI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIG-Aa-xCG">
+                                <rect key="frame" x="120" y="84" width="460" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GIG-Aa-xCG" firstAttribute="leading" secondItem="GVj-PZ-aGH" secondAttribute="trailing" constant="20" id="0Z7-3y-xoZ"/>
+                            <constraint firstItem="GIG-Aa-xCG" firstAttribute="top" secondItem="WLM-zN-lzi" secondAttribute="bottom" constant="20" id="1m5-0c-NQB"/>
+                            <constraint firstAttribute="trailing" secondItem="aoy-T2-A6o" secondAttribute="trailing" constant="20" id="3cu-rx-yiv"/>
+                            <constraint firstItem="wga-40-5Zz" firstAttribute="top" secondItem="alr-pS-P7O" secondAttribute="topMargin" id="3wq-f3-NWa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wga-40-5Zz" secondAttribute="trailing" constant="-16" id="939-9E-6Ho"/>
+                            <constraint firstItem="aoy-T2-A6o" firstAttribute="leading" secondItem="alr-pS-P7O" secondAttribute="leading" constant="20" id="L1a-qS-cvM"/>
+                            <constraint firstItem="aoy-T2-A6o" firstAttribute="top" secondItem="GVj-PZ-aGH" secondAttribute="bottom" constant="16" id="QXL-1R-bZX"/>
+                            <constraint firstAttribute="trailing" secondItem="GIG-Aa-xCG" secondAttribute="trailing" constant="20" id="XCZ-ZJ-KFv"/>
+                            <constraint firstItem="GVj-PZ-aGH" firstAttribute="leading" secondItem="alr-pS-P7O" secondAttribute="leading" constant="20" id="d61-W5-Ap0"/>
+                            <constraint firstItem="J4O-kh-OVt" firstAttribute="top" secondItem="aoy-T2-A6o" secondAttribute="bottom" constant="10" id="fOn-JD-Pyh"/>
+                            <constraint firstItem="J4O-kh-OVt" firstAttribute="top" secondItem="wga-40-5Zz" secondAttribute="bottom" id="g5L-ra-OC3"/>
+                            <constraint firstItem="GVj-PZ-aGH" firstAttribute="top" secondItem="WLM-zN-lzi" secondAttribute="bottom" constant="20" id="lMJ-qm-w1h"/>
+                            <constraint firstItem="wga-40-5Zz" firstAttribute="leading" secondItem="alr-pS-P7O" secondAttribute="leadingMargin" constant="-16" id="tcf-B9-aGd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3wq-f3-NWa"/>
+                                <exclude reference="fOn-JD-Pyh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="app detail" id="37m-Ex-Ucc">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="CbJ-f6-7IK">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="photoTableView" destination="wga-40-5Zz" id="0WL-FW-cN2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LbH-fL-0wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3591" y="-476"/>
+            <point key="canvasLocation" x="2943" y="-296"/>
         </scene>
         <!--search-->
         <scene sceneID="BaZ-bR-IQE">
@@ -204,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kuE-0y-86k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="-78"/>
+            <point key="canvasLocation" x="53" y="-78"/>
         </scene>
         <!--search reults-->
         <scene sceneID="hac-5o-ujt">
@@ -254,6 +316,7 @@
                                 <connections>
                                     <outlet property="cellIcon" destination="Nc3-CE-3CA" id="8pR-bE-3y2"/>
                                     <outlet property="cellTitle" destination="cYD-70-gY3" id="Vil-RU-Qwr"/>
+                                    <segue destination="IRn-Gm-DXQ" kind="show" id="hpC-oI-NkB"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -273,7 +336,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqK-y2-Sqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-78"/>
+            <point key="canvasLocation" x="1481" y="306"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="amL-yN-VoJ">
@@ -330,7 +393,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13M-1c-IoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2723" y="-456"/>
+            <point key="canvasLocation" x="2279" y="-296"/>
         </scene>
         <!--search-->
         <scene sceneID="fre-AL-TdH">
@@ -349,7 +412,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFQ-NM-fQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-499" y="-78"/>
+            <point key="canvasLocation" x="-663" y="-78"/>
         </scene>
         <!--wish list-->
         <scene sceneID="j68-kA-UZm">
@@ -376,7 +439,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNH-6f-F8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324" y="714"/>
+            <point key="canvasLocation" x="88" y="690"/>
         </scene>
         <!--wish-->
         <scene sceneID="CaF-wE-hrV">
@@ -395,7 +458,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHN-Kg-5WK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488" y="714"/>
+            <point key="canvasLocation" x="-676" y="690"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Iv-Iz-9WR">
@@ -413,7 +476,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2l-Ho-Pj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1041" y="-78"/>
+            <point key="canvasLocation" x="749" y="306"/>
         </scene>
     </scenes>
     <resources>
@@ -421,4 +484,7 @@
         <image name="menu" width="32" height="32"/>
         <image name="search" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hpC-oI-NkB"/>
+    </inferredMetricsTieBreakers>
 </document>

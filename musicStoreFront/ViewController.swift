@@ -90,6 +90,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             return UIEdgeInsetsMake(10, 40, 10, 40)
         }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        let vc:UINavigationController = segue.destinationViewController as! UINavigationController
+        let detailController:detailViewController = vc.topViewController as! detailViewController
+        
+        let path:NSIndexPath = self.collectionView!.indexPathForCell(sender as! UICollectionViewCell)!
+        let object = self.results[path.row]
+        
+        detailController.appObject = object
+        
+    }
 
 }
 

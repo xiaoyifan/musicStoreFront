@@ -25,6 +25,9 @@
 		CC97B3BE1AF7992A001F75EA /* musicStoreFrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */; };
 		CCBC33141AF87E440066882A /* searchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33131AF87E440066882A /* searchCollectionViewController.swift */; };
 		CCBC33161AF87F6D0066882A /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33151AF87F6D0066882A /* searchCell.swift */; };
+		CCBC331A1AF890730066882A /* photoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33191AF890730066882A /* photoOperations.swift */; };
+		CCDA7C611AF91F7000C9AE45 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA7C601AF91F7000C9AE45 /* detailViewController.swift */; };
+		CCDA7C631AF936F800C9AE45 /* screenshotsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA7C621AF936F800C9AE45 /* screenshotsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicStoreFrontTests.swift; sourceTree = "<group>"; };
 		CCBC33131AF87E440066882A /* searchCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCollectionViewController.swift; sourceTree = "<group>"; };
 		CCBC33151AF87F6D0066882A /* searchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
+		CCBC33191AF890730066882A /* photoOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoOperations.swift; sourceTree = "<group>"; };
+		CCDA7C601AF91F7000C9AE45 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		CCDA7C621AF936F800C9AE45 /* screenshotsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = screenshotsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +110,10 @@
 				CC1528EF1AF81D8200CB7304 /* App.swift */,
 				CC1528D81AF7F27A00CB7304 /* appItem.swift */,
 				CC97B3A41AF79929001F75EA /* AppDelegate.swift */,
-				CC97B3A91AF7992A001F75EA /* ViewController.swift */,
-				CC1528CB1AF7BA9C00CB7304 /* appCell.swift */,
-				CC1528FD1AF856B500CB7304 /* seachViewController.swift */,
-				CCBC33131AF87E440066882A /* searchCollectionViewController.swift */,
-				CCBC33151AF87F6D0066882A /* searchCell.swift */,
+				CCBC33191AF890730066882A /* photoOperations.swift */,
+				CCBC33171AF88C3A0066882A /* mainVC */,
+				CCBC33181AF88C840066882A /* searchVC */,
+				CCDA7C5F1AF91F4D00C9AE45 /* detailVC */,
 				CC97B3AB1AF7992A001F75EA /* Main.storyboard */,
 				CC1528F41AF8325D00CB7304 /* musicStore.xcdatamodeld */,
 				CC1528F61AF8325D00CB7304 /* musicStore.sqlite-shm */,
@@ -146,6 +151,34 @@
 				CC97B3BC1AF7992A001F75EA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCBC33171AF88C3A0066882A /* mainVC */ = {
+			isa = PBXGroup;
+			children = (
+				CC1528CB1AF7BA9C00CB7304 /* appCell.swift */,
+				CC97B3A91AF7992A001F75EA /* ViewController.swift */,
+				CC1528FD1AF856B500CB7304 /* seachViewController.swift */,
+			);
+			name = mainVC;
+			sourceTree = "<group>";
+		};
+		CCBC33181AF88C840066882A /* searchVC */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC33151AF87F6D0066882A /* searchCell.swift */,
+				CCBC33131AF87E440066882A /* searchCollectionViewController.swift */,
+			);
+			name = searchVC;
+			sourceTree = "<group>";
+		};
+		CCDA7C5F1AF91F4D00C9AE45 /* detailVC */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA7C601AF91F7000C9AE45 /* detailViewController.swift */,
+				CCDA7C621AF936F800C9AE45 /* screenshotsTableViewCell.swift */,
+			);
+			name = detailVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +295,10 @@
 				CC97B3A81AF7992A001F75EA /* musicStoreFront.xcdatamodeld in Sources */,
 				CC1528CC1AF7BA9C00CB7304 /* appCell.swift in Sources */,
 				CC1528F91AF8325D00CB7304 /* musicStore.xcdatamodeld in Sources */,
+				CCBC331A1AF890730066882A /* photoOperations.swift in Sources */,
 				CC1528FE1AF856B500CB7304 /* seachViewController.swift in Sources */,
+				CCDA7C611AF91F7000C9AE45 /* detailViewController.swift in Sources */,
+				CCDA7C631AF936F800C9AE45 /* screenshotsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
