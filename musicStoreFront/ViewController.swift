@@ -15,6 +15,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var results = [NSManagedObject]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +33,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         var errorFet:NSError?
         
-        var results:Array = context.executeFetchRequest(request, error: &errorFet)!
+        let fetchResults = context.executeFetchRequest(request, error: &errorFet) as? [NSManagedObject]
         
-        println(errorFet)
+        if let res = fetchResults {
+            self.results = res
+        }
+        
+//        println(self.results[0].valueForKey("appIcon"))
         
         
     }
@@ -49,15 +55,27 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 20
+            return self.results.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("appCell", forIndexPath: indexPath) as! UICollectionViewCell
-            var image : UIImage = UIImage(named:"sad")!
-            let bgImage = UIImageView(image: image)
-            bgImage.frame = CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height)
-            cell.addSubview(bgImage)
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("appCell", forIndexPath: indexPath) as! appCell
+        
+            let object = self.results[indexPath.row]
+        
+            let appName = object.valueForKey("trackCensoredName") as? String
+        
+            let picData = object.valueForKey("appIcon") as! NSData
+        
+            cell.cellTitle.text = appName
+        
+        if let image = UIImage(data: picData) {
+            cell.cellIcon.image = image
+            cell.cellIcon.layer.cornerRadius = 15.0
+            cell.cellIcon.clipsToBounds = true
+//            println(image)
+//            println(cell.cellIcon.image?.size)
+        }
     
             return cell
     }
@@ -65,7 +83,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
             let side = (self.view!.frame.width - 100)/2.0
     
-            return CGSizeMake(side, side)
+            return CGSizeMake(side, side*1.1)
         }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
