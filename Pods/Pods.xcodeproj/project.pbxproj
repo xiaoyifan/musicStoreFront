@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A65802272A96E80C32DCFA9 /* AHKActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0B13C68E49704BB7CBB8A /* AHKActionSheetViewController.m */; };
+		2859FABCB08B4417B71AEA3F /* AHKActionSheetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2418606899DF925ECE0E3CC0 /* AHKActionSheetViewController.h */; };
+		367FD49ACC912ECDB3430F32 /* AHKActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB3B8D0C8C6F216ED0D557 /* AHKActionSheet.m */; };
+		3F15606797B0D984277B746E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5983ECF1D24EE70B5A141C /* Foundation.framework */; };
+		502F31695B7388E6E7E64BF0 /* Pods-musicStoreFront-AHKActionSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC475BDC242A5AE9CF54CE1 /* Pods-musicStoreFront-AHKActionSheet-dummy.m */; };
+		6F725A3CF26314F58C09583F /* UIImage+AHKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6338FF579A1ABE29B7D97 /* UIImage+AHKAdditions.m */; };
+		7CDA123C5585F1BD23236D77 /* UIImage+AHKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B054263FEF60F3B0A7E0F792 /* UIImage+AHKAdditions.h */; };
+		9122A649A0EF557622EFEF49 /* UIWindow+AHKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D640E4FB573AC9D60E29D4B /* UIWindow+AHKAdditions.h */; };
+		B65D034A543AA36A5EA590F3 /* AHKActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECA58C7ED3FF921F2B7E1D4 /* AHKActionSheet.h */; };
+		DF7B27A6D87EDC6ED2F1BFA0 /* UIWindow+AHKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2622F6D293ADA4B2EB4E64FE /* UIWindow+AHKAdditions.m */; };
+		ECAA835889B7DFC0EAAA6F3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC4D6FE2471B15F16944B04 /* QuartzCore.framework */; };
+		EF16A0832143AFECA039FE15 /* Pods-musicStoreFront-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 896034B445235985859CFDCA /* Pods-musicStoreFront-dummy.m */; };
+		EF1705A0D8FDD4DE9C1E224C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5983ECF1D24EE70B5A141C /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C79D2D1BAD095C1E49C8123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3482254BE607488B3795DDF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 765417611DE0D300B62FA475;
+			remoteInfo = "Pods-musicStoreFront-AHKActionSheet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EBCFC1E5D82CEAA397E8CB4 /* Pods-musicStoreFront-AHKActionSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-musicStoreFront-AHKActionSheet-prefix.pch"; sourceTree = "<group>"; };
+		0F5983ECF1D24EE70B5A141C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1C59B67B69A8501285DBF4A2 /* Pods-musicStoreFront.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-musicStoreFront.debug.xcconfig"; sourceTree = "<group>"; };
+		2418606899DF925ECE0E3CC0 /* AHKActionSheetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AHKActionSheetViewController.h; path = Classes/AHKActionSheetViewController.h; sourceTree = "<group>"; };
+		2622F6D293ADA4B2EB4E64FE /* UIWindow+AHKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+AHKAdditions.m"; path = "Classes/UIWindow+AHKAdditions.m"; sourceTree = "<group>"; };
+		335B85AA0506C1D8661B30DB /* Pods-musicStoreFront-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-musicStoreFront-environment.h"; sourceTree = "<group>"; };
+		3AC475BDC242A5AE9CF54CE1 /* Pods-musicStoreFront-AHKActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-musicStoreFront-AHKActionSheet-dummy.m"; sourceTree = "<group>"; };
+		54A448CF4A2E26888E116074 /* libPods-musicStoreFront.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-musicStoreFront.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		652E6046B8E584BDF1265BCF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6CD6338FF579A1ABE29B7D97 /* UIImage+AHKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+AHKAdditions.m"; path = "Classes/UIImage+AHKAdditions.m"; sourceTree = "<group>"; };
+		896034B445235985859CFDCA /* Pods-musicStoreFront-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-musicStoreFront-dummy.m"; sourceTree = "<group>"; };
+		8C3DA2C714A0D1315BA38C20 /* Pods-musicStoreFront-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-musicStoreFront-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8ECA58C7ED3FF921F2B7E1D4 /* AHKActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AHKActionSheet.h; path = Classes/AHKActionSheet.h; sourceTree = "<group>"; };
+		95B4B46D64C9E0B3E321E44C /* Pods-musicStoreFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-musicStoreFront.release.xcconfig"; sourceTree = "<group>"; };
+		9D640E4FB573AC9D60E29D4B /* UIWindow+AHKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+AHKAdditions.h"; path = "Classes/UIWindow+AHKAdditions.h"; sourceTree = "<group>"; };
+		A1EA009092942FF2890C6B33 /* Pods-musicStoreFront-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-musicStoreFront-resources.sh"; sourceTree = "<group>"; };
+		A388D14CC77CA0EC674A0A29 /* Pods-musicStoreFront-AHKActionSheet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-musicStoreFront-AHKActionSheet.xcconfig"; sourceTree = "<group>"; };
+		A8E0B13C68E49704BB7CBB8A /* AHKActionSheetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AHKActionSheetViewController.m; path = Classes/AHKActionSheetViewController.m; sourceTree = "<group>"; };
+		AFE0C95734BA9A2782AF91E0 /* Pods-musicStoreFront-AHKActionSheet-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-musicStoreFront-AHKActionSheet-Private.xcconfig"; sourceTree = "<group>"; };
+		B054263FEF60F3B0A7E0F792 /* UIImage+AHKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AHKAdditions.h"; path = "Classes/UIImage+AHKAdditions.h"; sourceTree = "<group>"; };
+		CCCB3B8D0C8C6F216ED0D557 /* AHKActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AHKActionSheet.m; path = Classes/AHKActionSheet.m; sourceTree = "<group>"; };
+		D431F68424D095414E4EA2C9 /* libPods-musicStoreFront-AHKActionSheet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-musicStoreFront-AHKActionSheet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC4D6FE2471B15F16944B04 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		DEA4F7D31175ABE359645E93 /* Pods-musicStoreFront-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-musicStoreFront-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		018B71EC4CA1F95F11708970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1705A0D8FDD4DE9C1E224C /* Foundation.framework in Frameworks */,
+				ECAA835889B7DFC0EAAA6F3F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB05CE0109AE8EEA708BEF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F15606797B0D984277B746E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33CAA2D7962162AD17D40440 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2C70B49403352AC61AB7C89 /* AHKActionSheet */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DC5264F05DFD0791BE71C66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54A448CF4A2E26888E116074 /* libPods-musicStoreFront.a */,
+				D431F68424D095414E4EA2C9 /* libPods-musicStoreFront-AHKActionSheet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49C277519C0BFA4BD164556B /* Pods-musicStoreFront */ = {
+			isa = PBXGroup;
+			children = (
+				8C3DA2C714A0D1315BA38C20 /* Pods-musicStoreFront-acknowledgements.markdown */,
+				DEA4F7D31175ABE359645E93 /* Pods-musicStoreFront-acknowledgements.plist */,
+				896034B445235985859CFDCA /* Pods-musicStoreFront-dummy.m */,
+				335B85AA0506C1D8661B30DB /* Pods-musicStoreFront-environment.h */,
+				A1EA009092942FF2890C6B33 /* Pods-musicStoreFront-resources.sh */,
+				1C59B67B69A8501285DBF4A2 /* Pods-musicStoreFront.debug.xcconfig */,
+				95B4B46D64C9E0B3E321E44C /* Pods-musicStoreFront.release.xcconfig */,
+			);
+			name = "Pods-musicStoreFront";
+			path = "Target Support Files/Pods-musicStoreFront";
+			sourceTree = "<group>";
+		};
+		61C51D8C75B8E23288070668 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0F5983ECF1D24EE70B5A141C /* Foundation.framework */,
+				DCC4D6FE2471B15F16944B04 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7176C8F1933FC4397212D454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C51D8C75B8E23288070668 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C5CAC2A326BD3A6248E0FFD = {
+			isa = PBXGroup;
+			children = (
+				652E6046B8E584BDF1265BCF /* Podfile */,
+				7176C8F1933FC4397212D454 /* Frameworks */,
+				33CAA2D7962162AD17D40440 /* Pods */,
+				3DC5264F05DFD0791BE71C66 /* Products */,
+				8051EBCE30EDD37558F22E9C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8051EBCE30EDD37558F22E9C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49C277519C0BFA4BD164556B /* Pods-musicStoreFront */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BCCE425E04BD3F859DA4B235 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A388D14CC77CA0EC674A0A29 /* Pods-musicStoreFront-AHKActionSheet.xcconfig */,
+				AFE0C95734BA9A2782AF91E0 /* Pods-musicStoreFront-AHKActionSheet-Private.xcconfig */,
+				3AC475BDC242A5AE9CF54CE1 /* Pods-musicStoreFront-AHKActionSheet-dummy.m */,
+				0EBCFC1E5D82CEAA397E8CB4 /* Pods-musicStoreFront-AHKActionSheet-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-musicStoreFront-AHKActionSheet";
+			sourceTree = "<group>";
+		};
+		C2C70B49403352AC61AB7C89 /* AHKActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				8ECA58C7ED3FF921F2B7E1D4 /* AHKActionSheet.h */,
+				CCCB3B8D0C8C6F216ED0D557 /* AHKActionSheet.m */,
+				2418606899DF925ECE0E3CC0 /* AHKActionSheetViewController.h */,
+				A8E0B13C68E49704BB7CBB8A /* AHKActionSheetViewController.m */,
+				B054263FEF60F3B0A7E0F792 /* UIImage+AHKAdditions.h */,
+				6CD6338FF579A1ABE29B7D97 /* UIImage+AHKAdditions.m */,
+				9D640E4FB573AC9D60E29D4B /* UIWindow+AHKAdditions.h */,
+				2622F6D293ADA4B2EB4E64FE /* UIWindow+AHKAdditions.m */,
+				BCCE425E04BD3F859DA4B235 /* Support Files */,
+			);
+			path = AHKActionSheet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0681D4C62C41388999FED096 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65D034A543AA36A5EA590F3 /* AHKActionSheet.h in Headers */,
+				2859FABCB08B4417B71AEA3F /* AHKActionSheetViewController.h in Headers */,
+				7CDA123C5585F1BD23236D77 /* UIImage+AHKAdditions.h in Headers */,
+				9122A649A0EF557622EFEF49 /* UIWindow+AHKAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		765417611DE0D300B62FA475 /* Pods-musicStoreFront-AHKActionSheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288CDACE6369FE784073AC4C /* Build configuration list for PBXNativeTarget "Pods-musicStoreFront-AHKActionSheet" */;
+			buildPhases = (
+				C5CDA8A0CB439E8DFEF3DCCC /* Sources */,
+				018B71EC4CA1F95F11708970 /* Frameworks */,
+				0681D4C62C41388999FED096 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-musicStoreFront-AHKActionSheet";
+			productName = "Pods-musicStoreFront-AHKActionSheet";
+			productReference = D431F68424D095414E4EA2C9 /* libPods-musicStoreFront-AHKActionSheet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD2F5E82D00816E59CF01B83 /* Pods-musicStoreFront */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FC274F4E237606AED18D38C /* Build configuration list for PBXNativeTarget "Pods-musicStoreFront" */;
+			buildPhases = (
+				39E3302864F26FF80290C745 /* Sources */,
+				ACB05CE0109AE8EEA708BEF7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07E861A7C1241756461043B6 /* PBXTargetDependency */,
+			);
+			name = "Pods-musicStoreFront";
+			productName = "Pods-musicStoreFront";
+			productReference = 54A448CF4A2E26888E116074 /* libPods-musicStoreFront.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3482254BE607488B3795DDF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 715842FFDADDBC8C912DE7B7 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7C5CAC2A326BD3A6248E0FFD;
+			productRefGroup = 3DC5264F05DFD0791BE71C66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD2F5E82D00816E59CF01B83 /* Pods-musicStoreFront */,
+				765417611DE0D300B62FA475 /* Pods-musicStoreFront-AHKActionSheet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39E3302864F26FF80290C745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF16A0832143AFECA039FE15 /* Pods-musicStoreFront-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5CDA8A0CB439E8DFEF3DCCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				367FD49ACC912ECDB3430F32 /* AHKActionSheet.m in Sources */,
+				1A65802272A96E80C32DCFA9 /* AHKActionSheetViewController.m in Sources */,
+				502F31695B7388E6E7E64BF0 /* Pods-musicStoreFront-AHKActionSheet-dummy.m in Sources */,
+				6F725A3CF26314F58C09583F /* UIImage+AHKAdditions.m in Sources */,
+				DF7B27A6D87EDC6ED2F1BFA0 /* UIWindow+AHKAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07E861A7C1241756461043B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-musicStoreFront-AHKActionSheet";
+			target = 765417611DE0D300B62FA475 /* Pods-musicStoreFront-AHKActionSheet */;
+			targetProxy = 2C79D2D1BAD095C1E49C8123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04AB7AB4AB14C004E61E7866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B4B46D64C9E0B3E321E44C /* Pods-musicStoreFront.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		33AA60AC8D86AA599DEB1F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE0C95734BA9A2782AF91E0 /* Pods-musicStoreFront-AHKActionSheet-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-musicStoreFront-AHKActionSheet/Pods-musicStoreFront-AHKActionSheet-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44ED0C96CD429F9F465FDC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C59B67B69A8501285DBF4A2 /* Pods-musicStoreFront.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68CA265DFA692875EED64578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		694550C6EE52CD4CC6CA56A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE0C95734BA9A2782AF91E0 /* Pods-musicStoreFront-AHKActionSheet-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-musicStoreFront-AHKActionSheet/Pods-musicStoreFront-AHKActionSheet-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA7ACFD2569FE418BA1C2FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FC274F4E237606AED18D38C /* Build configuration list for PBXNativeTarget "Pods-musicStoreFront" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44ED0C96CD429F9F465FDC48 /* Debug */,
+				04AB7AB4AB14C004E61E7866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288CDACE6369FE784073AC4C /* Build configuration list for PBXNativeTarget "Pods-musicStoreFront-AHKActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694550C6EE52CD4CC6CA56A9 /* Debug */,
+				33AA60AC8D86AA599DEB1F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		715842FFDADDBC8C912DE7B7 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CA265DFA692875EED64578 /* Debug */,
+				CA7ACFD2569FE418BA1C2FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3482254BE607488B3795DDF0 /* Project object */;
+}

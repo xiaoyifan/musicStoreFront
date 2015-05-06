@@ -1,0 +1,10 @@
+PODS:
+  - AHKActionSheet (0.5.2)
+
+DEPENDENCIES:
+  - AHKActionSheet
+
+SPEC CHECKSUMS:
+  AHKActionSheet: cf463df49fb173ecdf85a7eb1f78da3913b558c7
+
+COCOAPODS: 0.37.0
