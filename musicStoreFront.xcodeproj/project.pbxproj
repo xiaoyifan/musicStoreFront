@@ -19,6 +19,9 @@
 		CC97B3AD1AF7992A001F75EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3AB1AF7992A001F75EA /* Main.storyboard */; };
 		CC97B3B21AF7992A001F75EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC97B3B01AF7992A001F75EA /* LaunchScreen.xib */; };
 		CC97B3BE1AF7992A001F75EA /* musicStoreFrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */; };
+		CC9DC2711AF9E1FF009C741B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9DC2701AF9E1FF009C741B /* ShareViewController.swift */; };
+		CC9DC2731AF9E1FF009C741B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9DC2721AF9E1FF009C741B /* MainInterface.storyboard */; };
+		CC9DC2761AF9E1FF009C741B /* favorites App widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC9DC26C1AF9E1FF009C741B /* favorites App widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CCBC33141AF87E440066882A /* searchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33131AF87E440066882A /* searchCollectionViewController.swift */; };
 		CCBC33161AF87F6D0066882A /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33151AF87F6D0066882A /* searchCell.swift */; };
 		CCBC331A1AF890730066882A /* photoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33191AF890730066882A /* photoOperations.swift */; };
@@ -55,7 +58,28 @@
 			remoteGlobalIDString = CC97B39E1AF79929001F75EA;
 			remoteInfo = musicStoreFront;
 		};
+		CC9DC2741AF9E1FF009C741B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC97B3971AF79929001F75EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9DC26B1AF9E1FF009C741B;
+			remoteInfo = "favorites App widget";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC9DC27A1AF9E200009C741B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC9DC2761AF9E1FF009C741B /* favorites App widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		246463C78A90B6C1DC9FA714 /* Pods-musicStoreFront.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicStoreFront.debug.xcconfig"; path = "Pods/Target Support Files/Pods-musicStoreFront/Pods-musicStoreFront.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +99,10 @@
 		CC97B3B71AF7992A001F75EA /* musicStoreFrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicStoreFrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC97B3BC1AF7992A001F75EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC97B3BD1AF7992A001F75EA /* musicStoreFrontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicStoreFrontTests.swift; sourceTree = "<group>"; };
+		CC9DC26C1AF9E1FF009C741B /* favorites App widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "favorites App widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9DC26F1AF9E1FF009C741B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9DC2701AF9E1FF009C741B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		CC9DC2721AF9E1FF009C741B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		CCBC33131AF87E440066882A /* searchCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCollectionViewController.swift; sourceTree = "<group>"; };
 		CCBC33151AF87F6D0066882A /* searchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
 		CCBC33191AF890730066882A /* photoOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoOperations.swift; sourceTree = "<group>"; };
@@ -135,6 +163,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC9DC2691AF9E1FF009C741B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -175,6 +210,7 @@
 				CCDA7C921AF9816600C9AE45 /* Parse.framework */,
 				CC97B3A11AF79929001F75EA /* musicStoreFront */,
 				CC97B3BA1AF7992A001F75EA /* musicStoreFrontTests */,
+				CC9DC26D1AF9E1FF009C741B /* favorites App widget */,
 				CC97B3A01AF79929001F75EA /* Products */,
 				9FD2BC7B429BA46660FC9E72 /* Pods */,
 				086DAB4D980D3F698682BAF0 /* Frameworks */,
@@ -186,6 +222,7 @@
 			children = (
 				CC97B39F1AF79929001F75EA /* musicStoreFront.app */,
 				CC97B3B71AF7992A001F75EA /* musicStoreFrontTests.xctest */,
+				CC9DC26C1AF9E1FF009C741B /* favorites App widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +276,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CC9DC26D1AF9E1FF009C741B /* favorites App widget */ = {
+			isa = PBXGroup;
+			children = (
+				CC9DC2701AF9E1FF009C741B /* ShareViewController.swift */,
+				CC9DC2721AF9E1FF009C741B /* MainInterface.storyboard */,
+				CC9DC26E1AF9E1FF009C741B /* Supporting Files */,
+			);
+			path = "favorites App widget";
+			sourceTree = "<group>";
+		};
+		CC9DC26E1AF9E1FF009C741B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC9DC26F1AF9E1FF009C741B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CCBC33171AF88C3A0066882A /* mainVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,10 +343,12 @@
 				CC97B39C1AF79929001F75EA /* Frameworks */,
 				CC97B39D1AF79929001F75EA /* Resources */,
 				EBB198AACB84975F850B6EAC /* Copy Pods Resources */,
+				CC9DC27A1AF9E200009C741B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC9DC2751AF9E1FF009C741B /* PBXTargetDependency */,
 			);
 			name = musicStoreFront;
 			productName = musicStoreFront;
@@ -316,6 +373,23 @@
 			productReference = CC97B3B71AF7992A001F75EA /* musicStoreFrontTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CC9DC26B1AF9E1FF009C741B /* favorites App widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9DC2791AF9E200009C741B /* Build configuration list for PBXNativeTarget "favorites App widget" */;
+			buildPhases = (
+				CC9DC2681AF9E1FF009C741B /* Sources */,
+				CC9DC2691AF9E1FF009C741B /* Frameworks */,
+				CC9DC26A1AF9E1FF009C741B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "favorites App widget";
+			productName = "favorites App widget";
+			productReference = CC9DC26C1AF9E1FF009C741B /* favorites App widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -332,6 +406,10 @@
 					CC97B3B61AF7992A001F75EA = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = CC97B39E1AF79929001F75EA;
+					};
+					CC9DC26B1AF9E1FF009C741B = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4NPA9YHQ69;
 					};
 				};
 			};
@@ -350,6 +428,7 @@
 			targets = (
 				CC97B39E1AF79929001F75EA /* musicStoreFront */,
 				CC97B3B61AF7992A001F75EA /* musicStoreFrontTests */,
+				CC9DC26B1AF9E1FF009C741B /* favorites App widget */,
 			);
 		};
 /* End PBXProject section */
@@ -373,6 +452,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9DC26A1AF9E1FF009C741B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9DC2731AF9E1FF009C741B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +528,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC9DC2681AF9E1FF009C741B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9DC2711AF9E1FF009C741B /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -448,6 +543,11 @@
 			isa = PBXTargetDependency;
 			target = CC97B39E1AF79929001F75EA /* musicStoreFront */;
 			targetProxy = CC97B3B81AF7992A001F75EA /* PBXContainerItemProxy */;
+		};
+		CC9DC2751AF9E1FF009C741B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC9DC26B1AF9E1FF009C741B /* favorites App widget */;
+			targetProxy = CC9DC2741AF9E1FF009C741B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -625,6 +725,32 @@
 			};
 			name = Release;
 		};
+		CC9DC2771AF9E200009C741B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "favorites App widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC9DC2781AF9E200009C741B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "favorites App widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -654,6 +780,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CC9DC2791AF9E200009C741B /* Build configuration list for PBXNativeTarget "favorites App widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9DC2771AF9E200009C741B /* Debug */,
+				CC9DC2781AF9E200009C741B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>favorites App widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>musicStoreFront.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>CC97B3B61AF7992A001F75EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC9DC26B1AF9E1FF009C741B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
