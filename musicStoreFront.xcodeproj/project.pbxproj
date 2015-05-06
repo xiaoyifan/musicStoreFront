@@ -11,11 +11,6 @@
 		CC1528CC1AF7BA9C00CB7304 /* appCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1528CB1AF7BA9C00CB7304 /* appCell.swift */; };
 		CC1528CE1AF7E2ED00CB7304 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1528CD1AF7E2ED00CB7304 /* sad.png */; };
 		CC1528D91AF7F27A00CB7304 /* appItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1528D81AF7F27A00CB7304 /* appItem.swift */; };
-		CC1528F01AF81D8200CB7304 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1528EF1AF81D8200CB7304 /* App.swift */; };
-		CC1528F91AF8325D00CB7304 /* musicStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC1528F41AF8325D00CB7304 /* musicStore.xcdatamodeld */; };
-		CC1528FA1AF8325D00CB7304 /* musicStore.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = CC1528F61AF8325D00CB7304 /* musicStore.sqlite-shm */; };
-		CC1528FB1AF8325D00CB7304 /* musicStore.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = CC1528F71AF8325D00CB7304 /* musicStore.sqlite-wal */; };
-		CC1528FC1AF8325D00CB7304 /* musicStore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CC1528F81AF8325D00CB7304 /* musicStore.sqlite */; };
 		CC1528FE1AF856B500CB7304 /* seachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1528FD1AF856B500CB7304 /* seachViewController.swift */; };
 		CC1529001AF8603B00CB7304 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1528FF1AF8603A00CB7304 /* Images.xcassets */; };
 		CC97B3A51AF79929001F75EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97B3A41AF79929001F75EA /* AppDelegate.swift */; };
@@ -29,6 +24,27 @@
 		CCBC331A1AF890730066882A /* photoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33191AF890730066882A /* photoOperations.swift */; };
 		CCDA7C611AF91F7000C9AE45 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA7C601AF91F7000C9AE45 /* detailViewController.swift */; };
 		CCDA7C631AF936F800C9AE45 /* screenshotsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA7C621AF936F800C9AE45 /* screenshotsTableViewCell.swift */; };
+		CCDA7C841AF97BCA00C9AE45 /* wishListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA7C831AF97BCA00C9AE45 /* wishListTableViewController.swift */; };
+		CCDA7C861AF97BFE00C9AE45 /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA7C851AF97BFE00C9AE45 /* listTableViewCell.swift */; };
+		CCDA7C931AF9816600C9AE45 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C911AF9816600C9AE45 /* Bolts.framework */; };
+		CCDA7C941AF9816600C9AE45 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C921AF9816600C9AE45 /* Parse.framework */; };
+		CCDA7C951AF981A500C9AE45 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C681AF9700600C9AE45 /* AudioToolbox.framework */; };
+		CCDA7C961AF981AF00C9AE45 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C6A1AF9701E00C9AE45 /* CFNetwork.framework */; };
+		CCDA7C971AF981B900C9AE45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C6C1AF9702F00C9AE45 /* CoreGraphics.framework */; };
+		CCDA7C981AF981BF00C9AE45 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C6E1AF9704200C9AE45 /* CoreLocation.framework */; };
+		CCDA7C991AF981CA00C9AE45 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C701AF9704A00C9AE45 /* MobileCoreServices.framework */; };
+		CCDA7C9A1AF981D000C9AE45 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C721AF9705600C9AE45 /* QuartzCore.framework */; };
+		CCDA7C9B1AF981DD00C9AE45 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C741AF9706100C9AE45 /* Security.framework */; };
+		CCDA7C9C1AF981E600C9AE45 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C761AF9706900C9AE45 /* StoreKit.framework */; };
+		CCDA7C9D1AF981F000C9AE45 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C781AF9708700C9AE45 /* SystemConfiguration.framework */; };
+		CCDA7C9E1AF981F600C9AE45 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C7A1AF9709000C9AE45 /* libz.dylib */; };
+		CCDA7C9F1AF9820700C9AE45 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C7C1AF9709C00C9AE45 /* libsqlite3.dylib */; };
+		CCDA7CA01AF9820D00C9AE45 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C801AF9719B00C9AE45 /* Accounts.framework */; };
+		CCDA7CA11AF9821300C9AE45 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C7E1AF9719400C9AE45 /* Social.framework */; };
+		CCDA7CB01AF9C53300C9AE45 /* musicStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCDA7CAE1AF9C53300C9AE45 /* musicStore.xcdatamodeld */; };
+		CCDA7CB41AF9CAAD00C9AE45 /* musicStore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CCDA7CB11AF9CAAD00C9AE45 /* musicStore.sqlite */; };
+		CCDA7CB51AF9CAAD00C9AE45 /* musicStore.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = CCDA7CB21AF9CAAD00C9AE45 /* musicStore.sqlite-shm */; };
+		CCDA7CB61AF9CAAD00C9AE45 /* musicStore.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = CCDA7CB31AF9CAAD00C9AE45 /* musicStore.sqlite-wal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +63,6 @@
 		CC1528CB1AF7BA9C00CB7304 /* appCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appCell.swift; sourceTree = "<group>"; };
 		CC1528CD1AF7E2ED00CB7304 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 		CC1528D81AF7F27A00CB7304 /* appItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appItem.swift; sourceTree = "<group>"; };
-		CC1528EF1AF81D8200CB7304 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = ../App.swift; sourceTree = "<group>"; };
-		CC1528F51AF8325D00CB7304 /* musicStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = musicStore.xcdatamodel; sourceTree = "<group>"; };
-		CC1528F61AF8325D00CB7304 /* musicStore.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-shm"; sourceTree = "<group>"; };
-		CC1528F71AF8325D00CB7304 /* musicStore.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-wal"; sourceTree = "<group>"; };
-		CC1528F81AF8325D00CB7304 /* musicStore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicStore.sqlite; sourceTree = "<group>"; };
 		CC1528FD1AF856B500CB7304 /* seachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = seachViewController.swift; sourceTree = "<group>"; };
 		CC1528FF1AF8603A00CB7304 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC97B39F1AF79929001F75EA /* musicStoreFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicStoreFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +80,27 @@
 		CCBC33191AF890730066882A /* photoOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoOperations.swift; sourceTree = "<group>"; };
 		CCDA7C601AF91F7000C9AE45 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		CCDA7C621AF936F800C9AE45 /* screenshotsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = screenshotsTableViewCell.swift; sourceTree = "<group>"; };
+		CCDA7C681AF9700600C9AE45 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CCDA7C6A1AF9701E00C9AE45 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CCDA7C6C1AF9702F00C9AE45 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCDA7C6E1AF9704200C9AE45 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CCDA7C701AF9704A00C9AE45 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CCDA7C721AF9705600C9AE45 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CCDA7C741AF9706100C9AE45 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CCDA7C761AF9706900C9AE45 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CCDA7C781AF9708700C9AE45 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CCDA7C7A1AF9709000C9AE45 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CCDA7C7C1AF9709C00C9AE45 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CCDA7C7E1AF9719400C9AE45 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CCDA7C801AF9719B00C9AE45 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CCDA7C831AF97BCA00C9AE45 /* wishListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wishListTableViewController.swift; sourceTree = "<group>"; };
+		CCDA7C851AF97BFE00C9AE45 /* listTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
+		CCDA7C911AF9816600C9AE45 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		CCDA7C921AF9816600C9AE45 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CCDA7CAF1AF9C53300C9AE45 /* musicStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = musicStore.xcdatamodel; sourceTree = "<group>"; };
+		CCDA7CB11AF9CAAD00C9AE45 /* musicStore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicStore.sqlite; sourceTree = "<group>"; };
+		CCDA7CB21AF9CAAD00C9AE45 /* musicStore.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-shm"; sourceTree = "<group>"; };
+		CCDA7CB31AF9CAAD00C9AE45 /* musicStore.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-wal"; sourceTree = "<group>"; };
 		E2ECB44FF5C4D36FF35EEA50 /* Pods-musicStoreFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicStoreFront.release.xcconfig"; path = "Pods/Target Support Files/Pods-musicStoreFront/Pods-musicStoreFront.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +109,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDA7CA11AF9821300C9AE45 /* Social.framework in Frameworks */,
+				CCDA7CA01AF9820D00C9AE45 /* Accounts.framework in Frameworks */,
+				CCDA7C9F1AF9820700C9AE45 /* libsqlite3.dylib in Frameworks */,
+				CCDA7C9E1AF981F600C9AE45 /* libz.dylib in Frameworks */,
+				CCDA7C9D1AF981F000C9AE45 /* SystemConfiguration.framework in Frameworks */,
+				CCDA7C9C1AF981E600C9AE45 /* StoreKit.framework in Frameworks */,
+				CCDA7C9B1AF981DD00C9AE45 /* Security.framework in Frameworks */,
+				CCDA7C9A1AF981D000C9AE45 /* QuartzCore.framework in Frameworks */,
+				CCDA7C991AF981CA00C9AE45 /* MobileCoreServices.framework in Frameworks */,
+				CCDA7C981AF981BF00C9AE45 /* CoreLocation.framework in Frameworks */,
+				CCDA7C971AF981B900C9AE45 /* CoreGraphics.framework in Frameworks */,
+				CCDA7C961AF981AF00C9AE45 /* CFNetwork.framework in Frameworks */,
+				CCDA7C951AF981A500C9AE45 /* AudioToolbox.framework in Frameworks */,
 				34612E1A48FE27A055B4B4A0 /* libPods-musicStoreFront.a in Frameworks */,
+				CCDA7C941AF9816600C9AE45 /* Parse.framework in Frameworks */,
+				CCDA7C931AF9816600C9AE45 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +141,19 @@
 		086DAB4D980D3F698682BAF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCDA7C801AF9719B00C9AE45 /* Accounts.framework */,
+				CCDA7C7E1AF9719400C9AE45 /* Social.framework */,
+				CCDA7C7C1AF9709C00C9AE45 /* libsqlite3.dylib */,
+				CCDA7C7A1AF9709000C9AE45 /* libz.dylib */,
+				CCDA7C781AF9708700C9AE45 /* SystemConfiguration.framework */,
+				CCDA7C761AF9706900C9AE45 /* StoreKit.framework */,
+				CCDA7C741AF9706100C9AE45 /* Security.framework */,
+				CCDA7C721AF9705600C9AE45 /* QuartzCore.framework */,
+				CCDA7C701AF9704A00C9AE45 /* MobileCoreServices.framework */,
+				CCDA7C6E1AF9704200C9AE45 /* CoreLocation.framework */,
+				CCDA7C6C1AF9702F00C9AE45 /* CoreGraphics.framework */,
+				CCDA7C6A1AF9701E00C9AE45 /* CFNetwork.framework */,
+				CCDA7C681AF9700600C9AE45 /* AudioToolbox.framework */,
 				65DC648C5B1E6182F80EB2B3 /* libPods-musicStoreFront.a */,
 			);
 			name = Frameworks;
@@ -111,6 +171,8 @@
 		CC97B3961AF79929001F75EA = {
 			isa = PBXGroup;
 			children = (
+				CCDA7C911AF9816600C9AE45 /* Bolts.framework */,
+				CCDA7C921AF9816600C9AE45 /* Parse.framework */,
 				CC97B3A11AF79929001F75EA /* musicStoreFront */,
 				CC97B3BA1AF7992A001F75EA /* musicStoreFrontTests */,
 				CC97B3A01AF79929001F75EA /* Products */,
@@ -131,18 +193,18 @@
 		CC97B3A11AF79929001F75EA /* musicStoreFront */ = {
 			isa = PBXGroup;
 			children = (
-				CC1528EF1AF81D8200CB7304 /* App.swift */,
 				CC1528D81AF7F27A00CB7304 /* appItem.swift */,
 				CC97B3A41AF79929001F75EA /* AppDelegate.swift */,
 				CCBC33191AF890730066882A /* photoOperations.swift */,
+				CCDA7C821AF97B9B00C9AE45 /* wishlistVC */,
 				CCBC33171AF88C3A0066882A /* mainVC */,
 				CCBC33181AF88C840066882A /* searchVC */,
 				CCDA7C5F1AF91F4D00C9AE45 /* detailVC */,
 				CC97B3AB1AF7992A001F75EA /* Main.storyboard */,
-				CC1528F41AF8325D00CB7304 /* musicStore.xcdatamodeld */,
-				CC1528F61AF8325D00CB7304 /* musicStore.sqlite-shm */,
-				CC1528F71AF8325D00CB7304 /* musicStore.sqlite-wal */,
-				CC1528F81AF8325D00CB7304 /* musicStore.sqlite */,
+				CCDA7CAE1AF9C53300C9AE45 /* musicStore.xcdatamodeld */,
+				CCDA7CB11AF9CAAD00C9AE45 /* musicStore.sqlite */,
+				CCDA7CB21AF9CAAD00C9AE45 /* musicStore.sqlite-shm */,
+				CCDA7CB31AF9CAAD00C9AE45 /* musicStore.sqlite-wal */,
 				CC1528FF1AF8603A00CB7304 /* Images.xcassets */,
 				CC1528CD1AF7E2ED00CB7304 /* sad.png */,
 				CC97B3B01AF7992A001F75EA /* LaunchScreen.xib */,
@@ -203,6 +265,15 @@
 				CCDA7C621AF936F800C9AE45 /* screenshotsTableViewCell.swift */,
 			);
 			name = detailVC;
+			sourceTree = "<group>";
+		};
+		CCDA7C821AF97B9B00C9AE45 /* wishlistVC */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA7C831AF97BCA00C9AE45 /* wishListTableViewController.swift */,
+				CCDA7C851AF97BFE00C9AE45 /* listTableViewCell.swift */,
+			);
+			name = wishlistVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,13 +359,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC1528FB1AF8325D00CB7304 /* musicStore.sqlite-wal in Resources */,
-				CC1528FC1AF8325D00CB7304 /* musicStore.sqlite in Resources */,
+				CCDA7CB51AF9CAAD00C9AE45 /* musicStore.sqlite-shm in Resources */,
 				CC97B3AD1AF7992A001F75EA /* Main.storyboard in Resources */,
 				CC97B3B21AF7992A001F75EA /* LaunchScreen.xib in Resources */,
-				CC1528FA1AF8325D00CB7304 /* musicStore.sqlite-shm in Resources */,
 				CC1528CE1AF7E2ED00CB7304 /* sad.png in Resources */,
+				CCDA7CB61AF9CAAD00C9AE45 /* musicStore.sqlite-wal in Resources */,
 				CC1529001AF8603B00CB7304 /* Images.xcassets in Resources */,
+				CCDA7CB41AF9CAAD00C9AE45 /* musicStore.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,14 +421,15 @@
 				CC97B3AA1AF7992A001F75EA /* ViewController.swift in Sources */,
 				CC1528D91AF7F27A00CB7304 /* appItem.swift in Sources */,
 				CC97B3A51AF79929001F75EA /* AppDelegate.swift in Sources */,
-				CC1528F01AF81D8200CB7304 /* App.swift in Sources */,
+				CCDA7C861AF97BFE00C9AE45 /* listTableViewCell.swift in Sources */,
 				CC97B3A81AF7992A001F75EA /* musicStoreFront.xcdatamodeld in Sources */,
 				CC1528CC1AF7BA9C00CB7304 /* appCell.swift in Sources */,
-				CC1528F91AF8325D00CB7304 /* musicStore.xcdatamodeld in Sources */,
+				CCDA7C841AF97BCA00C9AE45 /* wishListTableViewController.swift in Sources */,
 				CCBC331A1AF890730066882A /* photoOperations.swift in Sources */,
 				CC1528FE1AF856B500CB7304 /* seachViewController.swift in Sources */,
 				CCDA7C611AF91F7000C9AE45 /* detailViewController.swift in Sources */,
 				CCDA7C631AF936F800C9AE45 /* screenshotsTableViewCell.swift in Sources */,
+				CCDA7CB01AF9C53300C9AE45 /* musicStore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +561,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = musicStoreFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,6 +580,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = musicStoreFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -578,16 +658,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CC1528F41AF8325D00CB7304 /* musicStore.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CC1528F51AF8325D00CB7304 /* musicStore.xcdatamodel */,
-			);
-			currentVersion = CC1528F51AF8325D00CB7304 /* musicStore.xcdatamodel */;
-			path = musicStore.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		CC97B3A61AF7992A001F75EA /* musicStoreFront.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
@@ -595,6 +665,16 @@
 			);
 			currentVersion = CC97B3A71AF7992A001F75EA /* musicStoreFront.xcdatamodel */;
 			path = musicStoreFront.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		CCDA7CAE1AF9C53300C9AE45 /* musicStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCDA7CAF1AF9C53300C9AE45 /* musicStore.xcdatamodel */,
+			);
+			currentVersion = CCDA7CAF1AF9C53300C9AE45 /* musicStore.xcdatamodel */;
+			path = musicStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

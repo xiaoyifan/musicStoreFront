@@ -26,6 +26,7 @@ public class appItem {
     public var objDescription:NSString?
     public var minimumOsVersion:NSString?
     public var keywords:NSString?
+    public var trackId:NSNumber?
     
     public init() { }
 }

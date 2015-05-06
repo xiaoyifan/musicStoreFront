@@ -8,8 +8,10 @@
 
 import UIKit
 import CoreData
+import Parse
+import StoreKit
 
-class detailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
+class detailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate, SKStoreProductViewControllerDelegate {
 
     
     @IBOutlet weak var photoTableView: UITableView!
@@ -49,11 +51,73 @@ class detailViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     
-    @IBAction func wishListTapped(sender: UIBarButtonItem) {
+  
+    @IBAction func wishListTapped(sender: UIButton) {
+        
+        var musicApp = PFObject(className:"WishList")
+        musicApp["screenshotUrls"] = appObject!.valueForKey("screenshotUrls") as! NSArray
+        musicApp["artworkUrl60"] = appObject!.valueForKey("artworkUrl60") as! String
+        musicApp["appIcon"] = appObject!.valueForKey("appIcon") as! NSData
+        musicApp["ipadScreenshotUrls"] = appObject!.valueForKey("ipadScreenshotUrls") as! NSArray
+        musicApp["features"] = appObject!.valueForKey("features") as! NSArray
+        musicApp["averageUserRating"] = appObject!.valueForKey("averageUserRating") as! Double
+        musicApp["supportedDevices"] = appObject!.valueForKey("supportedDevices") as! NSArray
+        musicApp["trackCensoredName"] = appObject!.valueForKey("trackCensoredName") as! NSString
+        musicApp["languageCodesISO2A"] = appObject!.valueForKey("languageCodesISO2A") as! NSArray
+        musicApp["contentAdvisoryRating"] = appObject!.valueForKey("contentAdvisoryRating")
+        musicApp["trackViewUrl"] = appObject!.valueForKey("trackViewUrl") as! NSString
+        musicApp["currency"] = appObject!.valueForKey("currency") as! NSString
+        musicApp["price"] = appObject!.valueForKey("currency") as! NSString
+        musicApp["version"] = appObject!.valueForKey("version") as! NSString
+        musicApp["objDescription"] = appObject!.valueForKey("objDescription") as! NSString
+        musicApp["minimumOsVersion"] = appObject!.valueForKey("minimumOsVersion") as! NSString
+        musicApp["keywords"] = appObject!.valueForKey("keywords") as! NSString
+        musicApp["trackId"] = appObject!.valueForKey("trackId") as! NSNumber
+        
+        println(musicApp)
+        musicApp.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (!success) {
+                println(error?.description)
+            }
+            else{
+                let alert = UIAlertView(title: "Succeeded", message: "the app is already added to your wish list", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
+            }
+        }
+        
         
         
     }
     
+    
+    @IBAction func buyButtonTapped(sender: UIButton) {
+        
+        println("buy tapped")
+        let storeViewController:SKStoreProductViewController = SKStoreProductViewController()
+        storeViewController.delegate = self
+        
+        let number:NSNumber = appObject!.valueForKey("trackId") as! NSNumber
+        println(number)
+        
+        let parameters:Dictionary = [SKStoreProductParameterITunesItemIdentifier :number.stringValue]
+        
+        storeViewController.loadProductWithParameters(parameters, completionBlock:
+            { (result, error)-> Void in
+                
+                    self.presentViewController(storeViewController,
+                        animated: true, completion: nil)
+                
+                
+        })
+        
+    }
+    
+    func productViewControllerDidFinish(viewController:
+        SKStoreProductViewController!) {
+            viewController.dismissViewControllerAnimated(true,
+                completion: nil)
+    }
     
     func fetchPhotoDetails() {
         
