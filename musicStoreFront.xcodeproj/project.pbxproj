@@ -22,6 +22,22 @@
 		CC9DC2711AF9E1FF009C741B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9DC2701AF9E1FF009C741B /* ShareViewController.swift */; };
 		CC9DC2731AF9E1FF009C741B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9DC2721AF9E1FF009C741B /* MainInterface.storyboard */; };
 		CC9DC2761AF9E1FF009C741B /* favorites App widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC9DC26C1AF9E1FF009C741B /* favorites App widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCA7E4FB1AFB3761003DEEC7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA7E4F91AFB3761003DEEC7 /* Bolts.framework */; };
+		CCA7E4FD1AFB3898003DEEC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C681AF9700600C9AE45 /* AudioToolbox.framework */; };
+		CCA7E4FE1AFB38A0003DEEC7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C6A1AF9701E00C9AE45 /* CFNetwork.framework */; };
+		CCA7E4FF1AFB38A9003DEEC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C6C1AF9702F00C9AE45 /* CoreGraphics.framework */; };
+		CCA7E5001AFB38B2003DEEC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C6E1AF9704200C9AE45 /* CoreLocation.framework */; };
+		CCA7E5011AFB38BC003DEEC7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C701AF9704A00C9AE45 /* MobileCoreServices.framework */; };
+		CCA7E5021AFB38C2003DEEC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C721AF9705600C9AE45 /* QuartzCore.framework */; };
+		CCA7E5031AFB38CA003DEEC7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C741AF9706100C9AE45 /* Security.framework */; };
+		CCA7E5041AFB38D3003DEEC7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C761AF9706900C9AE45 /* StoreKit.framework */; };
+		CCA7E5051AFB38DB003DEEC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C781AF9708700C9AE45 /* SystemConfiguration.framework */; };
+		CCA7E5061AFB38E5003DEEC7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C7A1AF9709000C9AE45 /* libz.dylib */; };
+		CCA7E5071AFB38F0003DEEC7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C7C1AF9709C00C9AE45 /* libsqlite3.dylib */; };
+		CCA7E5081AFB38F8003DEEC7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C801AF9719B00C9AE45 /* Accounts.framework */; };
+		CCA7E5091AFB38FE003DEEC7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDA7C7E1AF9719400C9AE45 /* Social.framework */; };
+		CCA7E50D1AFB401B003DEEC7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA7E50C1AFB401B003DEEC7 /* Parse.framework */; };
+		CCA7E50E1AFB401B003DEEC7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA7E50C1AFB401B003DEEC7 /* Parse.framework */; };
 		CCBC33141AF87E440066882A /* searchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33131AF87E440066882A /* searchCollectionViewController.swift */; };
 		CCBC33161AF87F6D0066882A /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33151AF87F6D0066882A /* searchCell.swift */; };
 		CCBC331A1AF890730066882A /* photoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC33191AF890730066882A /* photoOperations.swift */; };
@@ -103,6 +119,8 @@
 		CC9DC26F1AF9E1FF009C741B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC9DC2701AF9E1FF009C741B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		CC9DC2721AF9E1FF009C741B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		CCA7E4F91AFB3761003DEEC7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		CCA7E50C1AFB401B003DEEC7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		CCBC33131AF87E440066882A /* searchCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCollectionViewController.swift; sourceTree = "<group>"; };
 		CCBC33151AF87F6D0066882A /* searchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
 		CCBC33191AF890730066882A /* photoOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoOperations.swift; sourceTree = "<group>"; };
@@ -129,6 +147,7 @@
 		CCDA7CB11AF9CAAD00C9AE45 /* musicStore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicStore.sqlite; sourceTree = "<group>"; };
 		CCDA7CB21AF9CAAD00C9AE45 /* musicStore.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-shm"; sourceTree = "<group>"; };
 		CCDA7CB31AF9CAAD00C9AE45 /* musicStore.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "musicStore.sqlite-wal"; sourceTree = "<group>"; };
+		CCFE6F371AFA9DAA0089E8F2 /* favorites App widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "favorites App widget.entitlements"; sourceTree = "<group>"; };
 		E2ECB44FF5C4D36FF35EEA50 /* Pods-musicStoreFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicStoreFront.release.xcconfig"; path = "Pods/Target Support Files/Pods-musicStoreFront/Pods-musicStoreFront.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +162,7 @@
 				CCDA7C9E1AF981F600C9AE45 /* libz.dylib in Frameworks */,
 				CCDA7C9D1AF981F000C9AE45 /* SystemConfiguration.framework in Frameworks */,
 				CCDA7C9C1AF981E600C9AE45 /* StoreKit.framework in Frameworks */,
+				CCA7E50D1AFB401B003DEEC7 /* Parse.framework in Frameworks */,
 				CCDA7C9B1AF981DD00C9AE45 /* Security.framework in Frameworks */,
 				CCDA7C9A1AF981D000C9AE45 /* QuartzCore.framework in Frameworks */,
 				CCDA7C991AF981CA00C9AE45 /* MobileCoreServices.framework in Frameworks */,
@@ -167,6 +187,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA7E5091AFB38FE003DEEC7 /* Social.framework in Frameworks */,
+				CCA7E5081AFB38F8003DEEC7 /* Accounts.framework in Frameworks */,
+				CCA7E5071AFB38F0003DEEC7 /* libsqlite3.dylib in Frameworks */,
+				CCA7E5061AFB38E5003DEEC7 /* libz.dylib in Frameworks */,
+				CCA7E50E1AFB401B003DEEC7 /* Parse.framework in Frameworks */,
+				CCA7E5051AFB38DB003DEEC7 /* SystemConfiguration.framework in Frameworks */,
+				CCA7E5041AFB38D3003DEEC7 /* StoreKit.framework in Frameworks */,
+				CCA7E5031AFB38CA003DEEC7 /* Security.framework in Frameworks */,
+				CCA7E5021AFB38C2003DEEC7 /* QuartzCore.framework in Frameworks */,
+				CCA7E5011AFB38BC003DEEC7 /* MobileCoreServices.framework in Frameworks */,
+				CCA7E5001AFB38B2003DEEC7 /* CoreLocation.framework in Frameworks */,
+				CCA7E4FF1AFB38A9003DEEC7 /* CoreGraphics.framework in Frameworks */,
+				CCA7E4FE1AFB38A0003DEEC7 /* CFNetwork.framework in Frameworks */,
+				CCA7E4FD1AFB3898003DEEC7 /* AudioToolbox.framework in Frameworks */,
+				CCA7E4FB1AFB3761003DEEC7 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +314,9 @@
 		CC9DC26D1AF9E1FF009C741B /* favorites App widget */ = {
 			isa = PBXGroup;
 			children = (
+				CCA7E50C1AFB401B003DEEC7 /* Parse.framework */,
+				CCA7E4F91AFB3761003DEEC7 /* Bolts.framework */,
+				CCFE6F371AFA9DAA0089E8F2 /* favorites App widget.entitlements */,
 				CC9DC2701AF9E1FF009C741B /* ShareViewController.swift */,
 				CC9DC2721AF9E1FF009C741B /* MainInterface.storyboard */,
 				CC9DC26E1AF9E1FF009C741B /* Supporting Files */,
@@ -410,6 +448,11 @@
 					CC9DC26B1AF9E1FF009C741B = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 4NPA9YHQ69;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -664,6 +707,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
 				);
 				INFOPLIST_FILE = musicStoreFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -683,6 +729,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
 				);
 				INFOPLIST_FILE = musicStoreFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -728,7 +777,21 @@
 		CC9DC2771AF9E200009C741B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "favorites App widget/favorites App widget.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -736,6 +799,7 @@
 				INFOPLIST_FILE = "favorites App widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -743,10 +807,25 @@
 		CC9DC2781AF9E200009C741B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "favorites App widget/favorites App widget.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
+					"$(PROJECT_DIR)/favorites",
+					App,
+					widget,
+				);
 				INFOPLIST_FILE = "favorites App widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -788,6 +867,7 @@
 				CC9DC2781AF9E200009C741B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
